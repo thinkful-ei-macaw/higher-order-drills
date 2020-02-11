@@ -66,3 +66,12 @@ snowWarning('Texas');
 snowWarning('Alaska');
 lavaWarning('Washington');
 lavaWarning('Home');
+
+const array = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+const result1 = array.filter(function(a,b) { 
+  if( a > 0 || b > 0) {
+    return true;
+}
+}
+); 
+console.log(result1);
