@@ -68,10 +68,27 @@ lavaWarning('Washington');
 lavaWarning('Home');
 
 const array = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
-const result1 = array.filter(function(a,b) { 
-  if( a > 0 || b > 0) {
-    return true;
-}
-}
-); 
+const result1 = array.filter(function(num){
+  if(num[0] >= 0 && num[1] >= 0) {
+    return true; 
+  } else  {
+    return false;
+  }
+}); 
 console.log(result1);
+
+const result2 = array.map(x => x[0] + x[1]);
+console.log(result2);
+
+const result3 = array.forEach(x => console.log(x[0]+ x[1]));
+
+
+function toReduce(sentence) {
+  let currentValue = [];
+  const reducer = (accumulator, currentValue) => {
+    if (
+  
+  let newArr = sentence.split(' ');
+  newArr.reduce(reducer);
+}
+
